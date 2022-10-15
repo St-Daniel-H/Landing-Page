@@ -4,7 +4,7 @@
 }
 
 body #header {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background-image: url("./images/pexels-photo-169647.jpeg");
   background-position: center;
@@ -23,19 +23,106 @@ body #header #topBar {
   flex-flow: row wrap;
 }
 body #header #topBar #NavBar ul {
-  display: flex;
   gap: 20px;
+  display: flex;
 }
 body #header #topBar #NavBar ul li {
   color: white;
   display: flex;
 }
+body #header #Welcome {
+  flex-flow: row wrap;
+  position: absolute;
+  top: 40%;
+  left: 10%;
+}
+@media (max-width: 550px) {
+  body #header #Welcome {
+    left: 0;
+    width: 100%;
+  }
+}
+body #header #Welcome h1 {
+  font-size: 150%;
+}
+body #header #Welcome #WelcomeSpeech {
+  width: 100%;
+  max-width: 600px;
+  position: relative;
+  height: 300px;
+}
+body #header #Welcome #WelcomeSpeech button {
+  margin-top: 60px;
+  width: 150px;
+  height: 40px;
+  background-color: purple;
+  border: none;
+  border-radius: 25px;
+}
+body #header #Welcome #WelcomeSpeech button:hover {
+  background-color: rgb(87, 1, 87);
+  color: white;
+}
+body #header #Welcome #Welcomeimage {
+  width: 300px;
+  height: 300px;
+  background-color: gray;
+}
 body #bottom {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  min-height: 100vh;
   background-image: url("./images/pexels-photo-313782.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #cccccc;
+  text-align: center;
+}
+body #bottom #RandomInfo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+  grid-gap: 1rem;
+  background-color: rgba(0, 0, 0, 0.3882352941);
+  min-height: 40vh;
+  padding: 20px;
+}
+body #bottom #RandomInfo .InfoBox {
+  margin-top: 90px;
+  height: 200px;
+  background-color: red;
+}
+body #bottom #Quote {
+  color: white;
+  margin-top: 20vh;
+  background-color: rgba(0, 0, 0, 0.5058823529);
+  height: 20vh;
+  font-size: 150%;
+  padding: 20px;
+  position: relative;
+}
+body #bottom #Quote #wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body #bottom #Ad {
+  position: relative;
+  height: 20vh;
+  margin-top: 20vh;
+  color: white;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.5058823529);
+}
+body #bottom #Ad #WrapperAd {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body #bottom #Ad button {
+  color: white;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.5058823529);
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

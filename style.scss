@@ -3,15 +3,15 @@
     padding:0;
 }
 body{
-    
      #header{
-        width:100vw;
+        width:100%;
         height:100vh;
         background-image: url("./images/pexels-photo-169647.jpeg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         background-color: #cccccc;
+        
         color:white;
         font-size:25px;
         #topBar{
@@ -23,9 +23,9 @@ body{
             flex-flow: row wrap;
             
             #NavBar{
-                ul{        
+                ul{    
+                    gap:20px;    
                     display:flex;   
-                    gap:20px;
                     li{
                         
                         color: white;
@@ -35,15 +35,102 @@ body{
                 
             }
         }
+        #Welcome{
+            flex-flow: row wrap;
+            position: absolute;
+            top: 40%;
+            left:10%;
+            @media(max-width:550px){
+                left:0;
+                width:100%;
+            }
+            h1{
+                font-size:150%;
+            }
+            #WelcomeSpeech{
+                width:100%;
+                max-width:600px;
+                position: relative;
+                height:300px;
+                button{
+                  margin-top:60px;
+                  width:150px;
+                  height:40px;
+                  background-color: purple;
+                  border:none;
+                  border-radius: 25px;
+                  &:hover{
+                    background-color: rgb(87, 1, 87);
+                    color:white;
+                  }
+                }
+            }
+            #Welcomeimage{
+                width:300px;
+                height:300px;
+                background-color: gray;
+            }
+        }
        
      }
      #bottom{
-        width:100vw;
-        height:100vh;
+        width:100%;
+        min-height:100vh;
         background-image: url("./images/pexels-photo-313782.jpeg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         background-color: #cccccc;
+        text-align: center;
+        #RandomInfo{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+        grid-gap: 1rem; 
+        background-color: #00000063;
+        min-height:40vh;
+        padding:20px;
+           .InfoBox{
+            margin-top:90px;
+              height:200px;
+              background-color: red;
+        }
+        }
+        #Quote{
+            color:white;
+            margin-top:20vh;
+            background-color: #00000081;
+            height:20vh;
+            font-size:150%;
+            padding:20px;
+            position:relative;
+            #wrapper{
+                position:absolute;
+                top:50%;
+                left:50%;
+                transform: translate(-50%,-50%);
+                
+            }
+
+        }
+        #Ad{
+            position:relative;
+            height:20vh;
+            margin-top:20vh;
+            color:white;
+            padding:30px;
+            background-color: #00000081;
+            #WrapperAd{
+                position:absolute;
+                top:50%;
+                left:50%;
+                transform: translate(-50%,-50%);
+            }
+            button{
+                color:white;
+                border:none;
+                background-color:  #00000081;
+                cursor:pointer;
+            }
+        }
      }
 }
