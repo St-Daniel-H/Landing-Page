@@ -1,0 +1,49 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    
+     #header{
+        width:100vw;
+        height:100vh;
+        background-image: url("./images/pexels-photo-169647.jpeg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: #cccccc;
+        color:white;
+        font-size:25px;
+        #topBar{
+            display: flex;
+            width: 100%;
+            align-self: stretch;
+            align-items: center;
+            justify-content: space-around;
+            flex-flow: row wrap;
+            
+            #NavBar{
+                ul{        
+                    display:flex;   
+                    gap:20px;
+                    li{
+                        
+                        color: white;
+                        display: flex;
+                    }        
+                }
+                
+            }
+        }
+       
+     }
+     #bottom{
+        width:100vw;
+        height:100vh;
+        background-image: url("./images/pexels-photo-313782.jpeg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: #cccccc;
+     }
+}
